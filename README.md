@@ -29,7 +29,7 @@ Currently, the ***chemical_reaction_data*** package supports the following chemi
 5. [Miscellaneous Data Sources](#miscellaneous-data-sources)
 
 
-### 1. The United States Patent and Trademark Office Dataset
+### The United States Patent and Trademark Office Dataset
 The **United States Patent and Trademark Office** dataset [[1]](#References) (USPTO) is an open-source chemical
 reaction information dataset constructed by text-mining patent grant and patent application documents.
 
@@ -50,7 +50,7 @@ Currently, the ***chemical_reaction_data*** package supports the following USPTO
 | USPTO-Stereo      | [(2018, Schwaller, P., et al.)](https://doi.org/10.1039/C8SC02339E)       | :red_circle: Not Implemented (Download Limitations)             |
 
 
-### 2. The Open Reaction Database
+### The Open Reaction Database
 The **Open Reaction Database** [[2]](#References) (ORD) is an open-source chemical reaction information database
 designed to support machine learning and related efforts in chemical reaction prediction, chemical synthesis planning,
 and experiment design. Currently, the ***chemical_reaction_data*** package supports the following ORD versions:
@@ -60,7 +60,7 @@ and experiment design. Currently, the ***chemical_reaction_data*** package suppo
 | ORD     | [(2021, Kearnes, S.M., et al.)](https://doi.org/10.1021/jacs.1c09820) | :green_circle: Implemented |
 
 
-### 3. The Rhea Database
+### The Rhea Database
 The **Rhea** database [[3]](#References) (RheaDB) is an open-source expert-curated knowledgebase of chemical and
 transport reactions of biological interest. Currently, the ***chemical_reaction_data*** package supports the following
 RheaDB versions:
@@ -70,7 +70,7 @@ RheaDB versions:
 | RheaDB  | [(2022, Bansal, P., et al.)](https://doi.org/10.1093/nar/gkab1016) | :green_circle: Implemented |
 
 
-### 4. The RetroRules Database
+### The RetroRules Database
 The **RetroRules** database [[4]](#References) (RetroRulesDB) is an open-source database of chemical reaction rules
 for metabolic pathway discovery and metabolic engineering. Currently, the ***chemical_reaction_data*** package supports
 the following RetroRulesDB versions:
@@ -81,7 +81,7 @@ the following RetroRulesDB versions:
 | RetroRulesDB (rr02) | [(2018, Duigou, T., et al.)](https://doi.org/10.1093/nar/gky940) | :green_circle: Implemented |
 
 
-### 5. Miscellaneous Data Sources
+### Miscellaneous Data Sources
 Currently, the ***chemical_reaction_data*** package supports the following miscellaneous data sources:
 
 | Data Source                                                     | Reference                                                               | Status                     |
