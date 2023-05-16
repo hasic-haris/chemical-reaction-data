@@ -27,20 +27,20 @@ class OrdPreparationUtilities:
             enable_logger: bool = False
     ) -> DataFrame:
         """
-        Prepare the Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.).
+        Prepare the ORD by (2021, Kearnes, S.M., et al.).
 
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter number_of_cpu_cores: The number of CPU cores that should be utilized.
         :parameter enable_logger: The indicator whether the logger should be enabled.
 
-        :returns: The prepared Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.).
+        :returns: The prepared ORD by (2021, Kearnes, S.M., et al.).
         """
 
         try:
             if enable_logger:
                 getLogger(__name__).info(
-                    "Started the preparation of the Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.)."
+                    "Started the preparation of the ORD by (2021, Kearnes, S.M., et al.)."
                 )
 
             prepared_data_rows = list()
@@ -114,8 +114,7 @@ class OrdPreparationUtilities:
             if output_directory_path is None:
                 if enable_logger:
                     getLogger(__name__).info(
-                        "Completed the preparation of the Open Reaction Database (ORD) by "
-                        "(2021, Kearnes, S.M., et al.)."
+                        "Completed the preparation of the ORD by (2021, Kearnes, S.M., et al.)."
                     )
 
                 return prepared_data
@@ -128,8 +127,8 @@ class OrdPreparationUtilities:
 
                 if enable_logger:
                     getLogger(__name__).info(
-                        "Completed the preparation of the Open Reaction Database (ORD) by "
-                        "(2021, Kearnes, S.M., et al.). The prepared data is stored at: '{0}'.".format(
+                        "Completed the preparation of the ORD by (2021, Kearnes, S.M., et al.). "
+                        "The prepared data is stored at: '{0}'.".format(
                             abspath(join(output_directory_path, "ord_2021_kearnes_et_al.csv"))
                         )
                     )

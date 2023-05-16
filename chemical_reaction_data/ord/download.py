@@ -21,7 +21,7 @@ class OrdDownloadUtilities:
             enable_logger: bool = False
     ) -> None:
         """
-        Download the Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.).
+        Download the ORD by (2021, Kearnes, S.M., et al.).
 
         :parameter output_directory_path: The path to the directory where the downloaded data should be stored.
         :parameter download_information_source: The indicator of the download information source.
@@ -32,7 +32,7 @@ class OrdDownloadUtilities:
         try:
             if enable_logger:
                 getLogger(__name__).info(
-                    "Started the download of the Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.)."
+                    "Started the download of the ORD by (2021, Kearnes, S.M., et al.)."
                 )
 
             download_information = ORD_DOWNLOAD_INFORMATION["v_2021_kearnes_et_al"][
@@ -51,7 +51,7 @@ class OrdDownloadUtilities:
 
             if enable_logger:
                 getLogger(__name__).info(
-                    "Completed the download of the Open Reaction Database (ORD) by (2021, Kearnes, S.M., et al.). "
+                    "Completed the download of the ORD by (2021, Kearnes, S.M., et al.). "
                     "The downloaded data is stored at: '{0}'.".format(
                         abspath(output_directory_path)
                     )
