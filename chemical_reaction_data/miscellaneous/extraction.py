@@ -35,7 +35,7 @@ class MiscellaneousDataExtractionUtilities:
             ArchiveExtractionUtilities.extract_from_zip_archive(
                 archive_file_path=join(downloaded_data_directory_path, "1"),
                 output_directory_path=output_directory_path,
-                archive_content_base_paths=[
+                archive_file_content_base_paths=[
                     "ci400442f_si_002.zip"
                 ]
             )
