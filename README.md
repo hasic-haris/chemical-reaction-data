@@ -1,12 +1,12 @@
 # Chemical Reaction Data
 This project introduces a comprehensive yet lightweight package to facilitate downloading, extraction and preparation
-of chemical reaction information data.
+of open-source chemical reaction data.
 
 
 ## Setup
 To use the ***chemical_reaction_data*** package, please ensure that the
 [ord-schema](https://github.com/open-reaction-database/ord-schema), [py7zr](https://github.com/miurahr/py7zr),
-[tqdm](https://github.com/tqdm/tqdm), and [rdkit](https://github.com/rdkit/rdkit) libraries are available. A minimal
+[tqdm](https://github.com/tqdm/tqdm) and [rdkit](https://github.com/rdkit/rdkit) libraries are available. A minimal
 execution environment can be set up using [conda](https://docs.conda.io/en/latest/) and
 [pip](https://pip.pypa.io/en/stable/) as follows:
 
@@ -20,7 +20,7 @@ pip install ord-schema py7zr tqdm
 
 
 ## Supported Data Sources
-Currently, the ***chemical_reaction_data*** package supports the following chemical reaction information data sources:
+Currently, the ***chemical_reaction_data*** package supports the following open-source chemical reaction data sources:
 
 1. [The United States Patent and Trademark Office Dataset](#the-united-states-patent-and-trademark-office-dataset)
 2. [The Open Reaction Database](#the-open-reaction-database)
@@ -31,7 +31,7 @@ Currently, the ***chemical_reaction_data*** package supports the following chemi
 
 ### The United States Patent and Trademark Office Dataset
 The **United States Patent and Trademark Office** dataset [[1]](#References) (USPTO) is an open-source chemical
-reaction information dataset constructed by text-mining patent grant and patent application documents.
+reaction dataset constructed by text-mining patent grant and patent application documents.
 
 ![uspto_dataset_versions.png](resources/uspto_dataset_versions.png)
 
@@ -51,9 +51,9 @@ Currently, the ***chemical_reaction_data*** package supports the following USPTO
 
 
 ### The Open Reaction Database
-The **Open Reaction Database** [[2]](#References) (ORD) is an open-source chemical reaction information database
-designed to support machine learning and related efforts in chemical reaction prediction, chemical synthesis planning,
-and experiment design. Currently, the ***chemical_reaction_data*** package supports the following ORD versions:
+The **Open Reaction Database** [[2]](#References) (ORD) is an open-source chemical reaction database designed to
+support machine learning and related efforts in chemical reaction prediction, chemical synthesis planning, and
+experiment design. Currently, the ***chemical_reaction_data*** package supports the following ORD versions:
 
 | Version | Reference                                                             | Status                     |
 |---------|-----------------------------------------------------------------------|----------------------------|
