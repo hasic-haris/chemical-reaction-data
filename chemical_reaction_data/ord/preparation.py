@@ -45,14 +45,7 @@ class OrdPreparationUtilities:
 
             prepared_data_rows = list()
 
-            it = 0
-
             for directory_path, _, directory_file_names in walk(extracted_data_directory_path):
-                it += 1
-
-                if it > 4:
-                    break
-
                 if any(directory_file_name.endswith(".pb.gz") for directory_file_name in directory_file_names):
                     for directory_file_name in tqdm(
                         iterable=directory_file_names,
