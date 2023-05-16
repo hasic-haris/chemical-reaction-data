@@ -19,6 +19,11 @@ pip install ord-schema py7zr tqdm
 ```
 
 
+## Scripts
+The ***scripts*** directory is primarily meant to illustrate how to utilize the ***chemical_reaction_data*** package to
+download, extract and prepare open-source chemical reaction data.
+
+
 ## Supported Data Sources
 Currently, the ***chemical_reaction_data*** package supports the following open-source chemical reaction data sources:
 
@@ -30,12 +35,12 @@ Currently, the ***chemical_reaction_data*** package supports the following open-
 
 
 ### The United States Patent and Trademark Office Dataset
-The **United States Patent and Trademark Office** dataset [[1]](#References) (USPTO) is an open-source chemical
+The **United States Patent and Trademark Office** (USPTO) dataset [[1]](#References) is an open-source chemical
 reaction dataset constructed by text-mining patent grant and patent application documents.
 
 ![uspto_dataset_versions.png](resources/uspto_dataset_versions.png)
 
-Currently, the ***chemical_reaction_data*** package supports the following USPTO versions:
+Currently, the ***chemical_reaction_data*** package supports the following USPTO dataset versions:
 
 | Version           | Reference                                                                 | Status                                                          |
 |-------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -75,10 +80,12 @@ The **RetroRules** database [[4]](#References) (RetroRulesDB) is an open-source 
 for metabolic pathway discovery and metabolic engineering. Currently, the ***chemical_reaction_data*** package supports
 the following RetroRulesDB versions:
 
-| Version             | Reference                                                        | Status                     |
-|---------------------|------------------------------------------------------------------|----------------------------|
-| RetroRulesDB (rr01) | [(2018, Duigou, T., et al.)](https://doi.org/10.1093/nar/gky940) | :green_circle: Implemented |
-| RetroRulesDB (rr02) | [(2018, Duigou, T., et al.)](https://doi.org/10.1093/nar/gky940) | :green_circle: Implemented |
+| Version                          | Reference                                                       | Status                     |
+|----------------------------------|-----------------------------------------------------------------|----------------------------|
+| RetroRulesDB (rr01.rp2.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827427) | :green_circle: Implemented |
+| RetroRulesDB (rr02.rp2.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5828017) | :green_circle: Implemented |
+| RetroRulesDB (rr02.rp3.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827977) | :green_circle: Implemented |
+| RetroRulesDB (rr02.rp3.nohs)     | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827969) | :green_circle: Implemented |
 
 
 ### Miscellaneous Data Sources
