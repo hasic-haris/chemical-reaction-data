@@ -28,6 +28,8 @@ class UsptoDatasetPreparationUtils:
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO (1976-2013) dataset by (2014, Lowe, D.M.).
         """
 
         try:
@@ -158,6 +160,8 @@ class UsptoDatasetPreparationUtils:
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO-50k dataset by (2016, Schneider, N., et al.).
         """
 
         try:
@@ -282,6 +286,8 @@ class UsptoDatasetPreparationUtils:
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO-15k dataset by (2017, Coley, C.W., et al.).
         """
 
         try:
@@ -392,6 +398,8 @@ class UsptoDatasetPreparationUtils:
         :parameter parse_xml_files: The indicator whether '*.xml' files should be parsed instead of '*.rsmi' files.
         :parameter number_of_cpu_cores: The number of CPU cores that should be utilized.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO (1976-2016) dataset by (2017, Lowe, D.M.).
         """
 
         try:
@@ -633,6 +641,8 @@ class UsptoDatasetPreparationUtils:
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO-50k dataset by (2017, Coley, C.W. et al.).
         """
 
         try:
@@ -717,6 +727,8 @@ class UsptoDatasetPreparationUtils:
         :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
         :parameter output_directory_path: The path to the directory where the prepared data should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared USPTO-MIT dataset by (2017, Jin, W. et al.).
         """
 
         try:
