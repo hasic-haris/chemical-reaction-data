@@ -26,9 +26,9 @@ pip install ord-schema py7zr tqdm
 
 ## Scripts
 The ***scripts*** directory is primarily meant to illustrate how to utilize the ***chemical_reaction_data*** package to
-download, extract and prepare open-source chemical reaction data. The line
-`export PYTHONPATH=$PYTHONPATH:"/path/to/project/root/directory"` is a reminder to add the path to the project root
-directory to the `PYTHONPATH` variable to make the package visible before running the scripts.
+download, extract and prepare open-source chemical reaction data. The first line of each script is just a reminder to
+add the path to the project root directory to the `PYTHONPATH` variable to make the package visible before running the
+scripts.
 
 
 ## Supported Data Sources
@@ -113,7 +113,7 @@ data sources, please refer to the original publications.
 ## Contact
 If you are interested in contributing to this project by reporting bugs, submitting feedback or anything else that
 might be beneficial, please feel free to do so via GitHub issues or [e-mail](mailto:hasic@cb.cs.titech.ac.jp). Also,
-feel free to check the latest research at [Elix, Inc.](https://www.elix-inc.com/). 
+check out the latest [Elix, Inc.](https://www.elix-inc.com/) research. 
 
 
 ## References
