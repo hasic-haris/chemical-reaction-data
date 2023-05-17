@@ -1,6 +1,11 @@
 # Chemical Reaction Data
-This project introduces a comprehensive yet lightweight package to facilitate downloading, extraction and preparation
-of open-source chemical reaction data.
+The computer-assisted synthesis field grew to become one of the most active fields in chemoinformatics, with new and
+improved approaches centered around chemical reactions being published on a regular basis. Unfortunately, the chemical
+reaction data necessary to develop and test the practicality of such approaches is not easy to come by, given the
+potential value it holds. The data that is available is often times of poor quality and quantity, stored in various
+different formats, or published behind a paywall, which can be a significant barrier of entry for many scientists.
+Taking all of this into account, the goal of this project is to systematically curate, categorize and facilitate the
+access to existing open-source chemical reaction data in one place.
 
 
 ## Setup
@@ -21,7 +26,9 @@ pip install ord-schema py7zr tqdm
 
 ## Scripts
 The ***scripts*** directory is primarily meant to illustrate how to utilize the ***chemical_reaction_data*** package to
-download, extract and prepare open-source chemical reaction data.
+download, extract and prepare open-source chemical reaction data. The line
+`export PYTHONPATH=$PYTHONPATH:"/path/to/project/root/directory"` is a reminder to add the path to the project root
+directory to the `PYTHONPATH` variable to make the package visible before running the scripts.
 
 
 ## Supported Data Sources
@@ -66,26 +73,26 @@ experiment design. Currently, the ***chemical_reaction_data*** package supports 
 
 
 ### The Rhea Database
-The **Rhea** database [[3]](#References) (RheaDB) is an open-source expert-curated knowledgebase of chemical and
-transport reactions of biological interest. Currently, the ***chemical_reaction_data*** package supports the following
-RheaDB versions:
+The **Rhea** database [[3]](#References) is an open-source expert-curated knowledgebase of chemical and transport
+reactions of biological interest. Currently, the ***chemical_reaction_data*** package supports the following Rhea
+database versions:
 
 | Version | Reference                                                          | Status                     |
 |---------|--------------------------------------------------------------------|----------------------------|
-| RheaDB  | [(2022, Bansal, P., et al.)](https://doi.org/10.1093/nar/gkab1016) | :green_circle: Implemented |
+| Rhea    | [(2022, Bansal, P., et al.)](https://doi.org/10.1093/nar/gkab1016) | :green_circle: Implemented |
 
 
 ### The RetroRules Database
-The **RetroRules** database [[4]](#References) (RetroRulesDB) is an open-source database of chemical reaction rules
-for metabolic pathway discovery and metabolic engineering. Currently, the ***chemical_reaction_data*** package supports
-the following RetroRulesDB versions:
+The **RetroRules** database [[4]](#References) is an open-source database of chemical reaction rules for metabolic
+pathway discovery and metabolic engineering. Currently, the ***chemical_reaction_data*** package supports the following
+RetroRules database versions:
 
-| Version                          | Reference                                                       | Status                     |
-|----------------------------------|-----------------------------------------------------------------|----------------------------|
-| RetroRulesDB (rr01.rp2.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827427) | :green_circle: Implemented |
-| RetroRulesDB (rr02.rp2.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5828017) | :green_circle: Implemented |
-| RetroRulesDB (rr02.rp3.hs)       | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827977) | :green_circle: Implemented |
-| RetroRulesDB (rr02.rp3.nohs)     | [(2018, Duigou, T., et al.)](https://zenodo.org/record/5827969) | :green_circle: Implemented |
+| Version                    | Reference                                                            | Status                     |
+|----------------------------|----------------------------------------------------------------------|----------------------------|
+| RetroRules (rr01.rp2.hs)   | [(2018, Duigou, T., et al.)](https://doi.org/10.5281/zenodo.5827427) | :green_circle: Implemented |
+| RetroRules (rr02.rp2.hs)   | [(2018, Duigou, T., et al.)](https://doi.org/10.5281/zenodo.5828017) | :green_circle: Implemented |
+| RetroRules (rr02.rp3.hs)   | [(2018, Duigou, T., et al.)](https://doi.org/10.5281/zenodo.5827977) | :green_circle: Implemented |
+| RetroRules (rr02.rp3.nohs) | [(2018, Duigou, T., et al.)](https://doi.org/10.5281/zenodo.5827969) | :green_circle: Implemented |
 
 
 ### Miscellaneous Data Sources
@@ -95,7 +102,7 @@ Currently, the ***chemical_reaction_data*** package supports the following misce
 |-----------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------|
 | Chemical Reaction Classification Dataset [[5]](#References)     | [(2013, Kraut, H., et al.)](https://doi.org/10.1021/ci400442f)          | :green_circle: Implemented |
 | Organic Chemistry Textbook Questions Dataset [[6]](#References) | [(2016, Wei, J.N., et al.)](https://doi.org/10.1021/acscentsci.6b00219) | :green_circle: Implemented |
-| RetroTransformDB Dataset [[7]](#References)                     | [(2018, Avramova, S., et al.)](https://doi.org/10.3390/data3020014)     | :green_circle: Implemented |
+| RetroTransformDB Dataset [[7]](#References)                     | [(2018, Avramova, S., et al.)](https://doi.org/10.5281/zenodo.1209312)  | :green_circle: Implemented |
 
 
 ## License Information
@@ -105,7 +112,8 @@ data sources, please refer to the original publications.
 
 ## Contact
 If you are interested in contributing to this project by reporting bugs, submitting feedback or anything else that
-might be beneficial, please feel free to do so via GitHub issues or [e-mail](mailto:hasic@cb.cs.titech.ac.jp).
+might be beneficial, please feel free to do so via GitHub issues or [e-mail](mailto:hasic@cb.cs.titech.ac.jp). Also,
+feel free to check the latest research at [Elix, Inc.](https://www.elix-inc.com/). 
 
 
 ## References
