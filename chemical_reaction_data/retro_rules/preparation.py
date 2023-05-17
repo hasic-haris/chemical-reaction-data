@@ -40,7 +40,7 @@ class RetroRulesDatabasePreparationUtilities:
             ]]
 
             prepared_data.columns = [
-                "reaction_rule_id",
+                "database_id",
                 "reaction_rule_smarts",
                 "reaction_rule_usage"
             ]
@@ -51,13 +51,13 @@ class RetroRulesDatabasePreparationUtilities:
                 ]
             ).sort_values(
                 by=[
-                    "reaction_rule_id"
+                    "database_id"
                 ]
             ).drop_duplicates().reset_index(
                 drop=True
             ).astype(
                 dtype={
-                    "reaction_rule_id": str,
+                    "database_id": str,
                     "reaction_rule_smarts": str,
                     "reaction_rule_usage": str
                 }
@@ -127,7 +127,7 @@ class RetroRulesDatabasePreparationUtilities:
             ]]
 
             prepared_data.columns = [
-                "reaction_rule_id",
+                "database_id",
                 "reaction_rule_smarts",
                 "reaction_rule_usage"
             ]
@@ -138,13 +138,13 @@ class RetroRulesDatabasePreparationUtilities:
                 ]
             ).sort_values(
                 by=[
-                    "reaction_rule_id"
+                    "database_id"
                 ]
             ).drop_duplicates().reset_index(
                 drop=True
             ).astype(
                 dtype={
-                    "reaction_rule_id": str,
+                    "database_id": str,
                     "reaction_rule_smarts": str,
                     "reaction_rule_usage": str
                 }
@@ -215,7 +215,7 @@ class RetroRulesDatabasePreparationUtilities:
             ]]
 
             prepared_data.columns = [
-                "reaction_rule_id",
+                "database_id",
                 "reaction_rule_smarts",
                 "reaction_rule_usage"
             ]
@@ -226,13 +226,13 @@ class RetroRulesDatabasePreparationUtilities:
                 ]
             ).sort_values(
                 by=[
-                    "reaction_rule_id"
+                    "database_id"
                 ]
             ).drop_duplicates().reset_index(
                 drop=True
             ).astype(
                 dtype={
-                    "reaction_rule_id": str,
+                    "database_id": str,
                     "reaction_rule_smarts": str,
                     "reaction_rule_usage": str
                 }
@@ -303,7 +303,7 @@ class RetroRulesDatabasePreparationUtilities:
             ]]
 
             prepared_data.columns = [
-                "reaction_rule_id",
+                "database_id",
                 "reaction_rule_smarts",
                 "reaction_rule_usage"
             ]
@@ -314,13 +314,13 @@ class RetroRulesDatabasePreparationUtilities:
                 ]
             ).sort_values(
                 by=[
-                    "reaction_rule_id"
+                    "database_id"
                 ]
             ).drop_duplicates().reset_index(
                 drop=True
             ).astype(
                 dtype={
-                    "reaction_rule_id": str,
+                    "database_id": str,
                     "reaction_rule_smarts": str,
                     "reaction_rule_usage": str
                 }

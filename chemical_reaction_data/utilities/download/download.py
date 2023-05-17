@@ -44,7 +44,7 @@ class DownloadUtilities:
         Download the contents from a URL string.
 
         :parameter url: The URL string.
-        :parameter output_directory_path: The path to the directory where the downloaded contents should be stored.
+        :parameter output_directory_path: The path to the directory where the downloaded URL contents should be stored.
         :parameter enable_logger: The indicator whether the logger should be enabled.
         """
 
@@ -73,7 +73,7 @@ class DownloadUtilities:
         Download the contents from a URL string, and visualize the progress with a progress bar.
 
         :parameter url: The URL string.
-        :parameter output_directory_path: The path to the directory where the downloaded contents should be stored.
+        :parameter output_directory_path: The path to the directory where the downloaded URL contents should be stored.
         :parameter description_message: The progress bar description message.
         :parameter enable_logger: The indicator whether the logger should be enabled.
         """

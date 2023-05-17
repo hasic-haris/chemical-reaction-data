@@ -22,7 +22,8 @@ class CompoundFormatConversionUtilities:
 
         :parameter compound_inchi: The chemical compound InChI string.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.inchi.{MolFromInchi}'.
 
         :returns: The chemical compound Mol object.
         """
@@ -55,7 +56,8 @@ class CompoundFormatConversionUtilities:
 
         :parameter compound_mol: The chemical compound Mol object.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.rdmolfiles.{MolToSmiles}'.
 
         :returns: The chemical compound SMILES string.
         """
@@ -91,7 +93,8 @@ class CompoundFormatConversionUtilities:
 
         :parameter compound_smiles: The chemical compound SMILES string.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.rdmolfiles.{MolFromSmiles}'.
 
         :returns: The chemical compound Mol object.
         """

@@ -241,7 +241,7 @@ class MiscellaneousDataPreparationUtilities:
             )
 
             prepared_data.columns = [
-                "reaction_transformation_id",
+                "dataset_id",
                 "reaction_transformation_name",
                 "reaction_transformation_smirks",
                 "reaction_transformation_functional_group",
@@ -254,13 +254,13 @@ class MiscellaneousDataPreparationUtilities:
                 ]
             ).sort_values(
                 by=[
-                    "reaction_transformation_id"
+                    "dataset_id"
                 ]
             ).drop_duplicates().reset_index(
                 drop=True
             ).astype(
                 dtype={
-                    "reaction_transformation_id": int,
+                    "dataset_id": int,
                     "reaction_transformation_name": str,
                     "reaction_transformation_smirks": str,
                     "reaction_transformation_functional_group": str,

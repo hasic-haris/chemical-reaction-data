@@ -20,7 +20,8 @@ class ReactionFormatConversionUtilities:
 
         :parameter reaction_rxn_block: The chemical reaction MDL RXNfile block string.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.rdChemReactions.{ReactionFromRxnBlock}'.
 
         :returns: The chemical reaction ChemicalReaction object.
         """
@@ -52,7 +53,8 @@ class ReactionFormatConversionUtilities:
 
         :parameter reaction_rxn: The chemical reaction ChemicalReaction object.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.rdChemReactions.{ReactionToSmiles}'.
 
         :returns: The chemical reaction SMILES string.
         """
@@ -82,7 +84,8 @@ class ReactionFormatConversionUtilities:
 
         :parameter reaction_smiles: The chemical reaction SMILES string.
         :parameter enable_logger: The indicator whether the logger should be enabled.
-        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions.
+        :parameter kwargs: The default keyword arguments for the adjustment of underlying functions:
+                           'rdkit.Chem.rdChemReactions.{ReactionFromSmarts}'.
 
         :returns: The chemical reaction ChemicalReaction object.
         """

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PYTHONPATH=$PYTHONPATH:"/path/to/project/directory"
+export PYTHONPATH=$PYTHONPATH:"/path/to/project/root/directory"
 
 export VERSION="v_2022_bansal_et_al"
 export OUTPUT_DIRECTORY_PATH="/path/to/output/directory"

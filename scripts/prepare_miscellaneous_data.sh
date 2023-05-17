@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PYTHONPATH=$PYTHONPATH:"/path/to/project/directory"
+export PYTHONPATH=$PYTHONPATH:"/path/to/project/root/directory"
 
 export VERSION="v_2013_kraut_et_al"
 export OUTPUT_DIRECTORY_PATH="/path/to/output/directory"
