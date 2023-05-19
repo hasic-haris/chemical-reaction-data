@@ -19,7 +19,9 @@ def parse_script_arguments() -> Namespace:
         choices=[
             "v_2013_kraut_et_al",
             "v_2016_wei_et_al",
-            "v_2018_avramova_et_al"
+            "v_2018_avramova_et_al",
+            "v_grambow_2022_wen_et_al",
+            "v_tpl100_2022_wen_et_al"
         ],
         required=True,
         help="The indicator of the data source version that should be prepared."
@@ -76,13 +78,25 @@ if __name__ == "__main__":
             enable_logger=script_arguments.enable_logger
         )
 
-    elif script_arguments.version == "v_2018_avramova_et_al":
-        MiscellaneousDataDownloadUtilities.download_2018_avramova_et_al(
+    elif script_arguments.version == "v_grambow_2022_wen_et_al":
+        MiscellaneousDataDownloadUtilities.download_grambow_2022_wen_et_al(
             output_directory_path=script_arguments.output_directory_path,
             enable_logger=script_arguments.enable_logger
         )
 
-        MiscellaneousDataPreparationUtilities.prepare_2018_avramova_et_al(
+        MiscellaneousDataPreparationUtilities.prepare_grambow_2022_wen_et_al(
+            extracted_data_directory_path=script_arguments.output_directory_path,
+            output_directory_path=script_arguments.output_directory_path,
+            enable_logger=script_arguments.enable_logger
+        )
+
+    elif script_arguments.version == "v_tpl100_2022_wen_et_al":
+        MiscellaneousDataDownloadUtilities.download_tpl100_2022_wen_et_al(
+            output_directory_path=script_arguments.output_directory_path,
+            enable_logger=script_arguments.enable_logger
+        )
+
+        MiscellaneousDataPreparationUtilities.prepare_tpl100_2022_wen_et_al(
             extracted_data_directory_path=script_arguments.output_directory_path,
             output_directory_path=script_arguments.output_directory_path,
             enable_logger=script_arguments.enable_logger

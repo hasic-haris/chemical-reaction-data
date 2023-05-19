@@ -43,6 +43,38 @@ MISCELLANEOUS_DATA_DOWNLOAD_INFORMATION = {
                 "/RetroTransformDB-v-1-0.txt"
             ]
         }
+    },
+
+    # ------------------------------------------------------------------------------------------------------------------
+    #  The Grambow dataset by (2022, Wen, M., et al.).
+    #  DOI: https://doi.org/10.1039/D1SC06515G.
+    # ------------------------------------------------------------------------------------------------------------------
+
+    "v_grambow_2022_wen_et_al": {
+        "official_github": {
+            "base_url": "https://raw.githubusercontent.com/mjwen/rxnrep/master/dataset/grambow",
+            "url_file_paths": [
+                "/grambow_test.tsv",
+                "/grambow_train.tsv",
+                "/grambow_val.tsv"
+            ]
+        }
+    },
+
+    # ------------------------------------------------------------------------------------------------------------------
+    #  The TPL100 dataset by (2022, Wen, M., et al.).
+    #  DOI: https://doi.org/10.1039/D1SC06515G.
+    # ------------------------------------------------------------------------------------------------------------------
+
+    "v_tpl100_2022_wen_et_al": {
+        "official_github": {
+            "base_url": "https://raw.githubusercontent.com/mjwen/rxnrep/master/dataset/tpl100",
+            "url_file_paths": [
+                "/tpl100_test.tsv",
+                "/tpl100_train.tsv",
+                "/tpl100_val.tsv"
+            ]
+        }
     }
 
     # ------------------------------------------------------------------------------------------------------------------

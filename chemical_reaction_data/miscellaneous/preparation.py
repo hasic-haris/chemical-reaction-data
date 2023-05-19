@@ -299,3 +299,265 @@ class MiscellaneousDataPreparationUtilities:
                 ).exception(exception_handle)
 
             raise
+
+    @staticmethod
+    def prepare_grambow_2022_wen_et_al(
+            extracted_data_directory_path: str,
+            output_directory_path: str = None,
+            enable_logger: bool = False
+    ) -> DataFrame:
+        """
+        Prepare the Grambow dataset by (2022, Wen, M., et al.).
+
+        :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
+        :parameter output_directory_path: The path to the directory where the prepared data should be stored.
+        :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared Grambow dataset by (2022, Wen, M., et al.).
+        """
+
+        try:
+            if enable_logger:
+                getLogger(__name__).info(
+                    "Started the preparation of the Grambow dataset by (2022, Wen, M., et al.)."
+                )
+
+            train_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "grambow_train.tsv"),
+                delimiter="\t"
+            )
+
+            train_data.columns = [
+                "reaction_smiles",
+                "activation_energy",
+                "reaction_enthalpy",
+                "raw_id",
+                "rmg_family",
+                "reaction_type"
+            ]
+
+            train_data["dataset_name"] = "grambow_train"
+
+            val_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "grambow_val.tsv"),
+                delimiter="\t"
+            )
+
+            val_data.columns = [
+                "reaction_smiles",
+                "activation_energy",
+                "reaction_enthalpy",
+                "raw_id",
+                "rmg_family",
+                "reaction_type"
+            ]
+
+            val_data["dataset_name"] = "grambow_val"
+
+            test_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "grambow_test.tsv"),
+                delimiter="\t"
+            )
+
+            test_data.columns = [
+                "reaction_smiles",
+                "activation_energy",
+                "reaction_enthalpy",
+                "raw_id",
+                "rmg_family",
+                "reaction_type"
+            ]
+
+            test_data["dataset_name"] = "grambow_test"
+
+            prepared_data = concat([
+                train_data,
+                val_data,
+                test_data
+            ])[[
+                "dataset_name",
+                "raw_id",
+                "rmg_family",
+                "reaction_type",
+                "reaction_smiles",
+                "activation_energy",
+                "reaction_enthalpy"
+            ]].dropna(
+                subset=[
+                    "reaction_smiles"
+                ]
+            ).sort_values(
+                by=[
+                    "raw_id"
+                ]
+            ).drop_duplicates().reset_index(
+                drop=True
+            ).astype(
+                dtype={
+                    "dataset_name": str,
+                    "raw_id": int,
+                    "rmg_family": str,
+                    "reaction_type": int,
+                    "reaction_smiles": str,
+                    "activation_energy": float,
+                    "reaction_enthalpy": float
+                }
+            )
+
+            if output_directory_path is None:
+                if enable_logger:
+                    getLogger(__name__).info(
+                        "Completed the preparation of the Grambow dataset by (2022, Wen, M., et al.)."
+                    )
+
+                return prepared_data
+
+            else:
+                prepared_data.to_csv(
+                    path_or_buf=join(output_directory_path, "grambow_2022_wen_et_al.csv"),
+                    index=False
+                )
+
+                if enable_logger:
+                    getLogger(__name__).info(
+                        "Completed the preparation of the Grambow dataset by (2022, Wen, M., et al.). "
+                        "The prepared data is stored at: '{0}'.".format(
+                            abspath(join(output_directory_path, "grambow_2022_wen_et_al.csv"))
+                        )
+                    )
+
+                return prepared_data
+
+        except Exception as exception_handle:
+            if enable_logger:
+                getLogger(
+                    "{0}.MiscellaneousDataPreparationUtilities.prepare_grambow_2022_wen_et_al".format(__name__)
+                ).exception(exception_handle)
+
+            raise
+
+    @staticmethod
+    def prepare_tpl100_2022_wen_et_al(
+            extracted_data_directory_path: str,
+            output_directory_path: str = None,
+            enable_logger: bool = False
+    ) -> DataFrame:
+        """
+        Prepare the TPL100 dataset by (2022, Wen, M., et al.).
+
+        :parameter extracted_data_directory_path: The path to the directory where the extracted data is stored.
+        :parameter output_directory_path: The path to the directory where the prepared data should be stored.
+        :parameter enable_logger: The indicator whether the logger should be enabled.
+
+        :returns: The prepared TPL100 dataset by (2022, Wen, M., et al.).
+        """
+
+        try:
+            if enable_logger:
+                getLogger(__name__).info(
+                    "Started the preparation of the TPL100 dataset by (2022, Wen, M., et al.)."
+                )
+
+            train_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "tpl100_train.tsv"),
+                delimiter="\t"
+            )
+
+            train_data.columns = [
+                "reaction_smiles",
+                "reaction_type",
+                "raw_id",
+                "original_reaction_type"
+            ]
+
+            train_data["dataset_name"] = "tpl100_train"
+
+            val_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "tpl100_val.tsv"),
+                delimiter="\t"
+            )
+
+            val_data.columns = [
+                "reaction_smiles",
+                "reaction_type",
+                "raw_id",
+                "original_reaction_type"
+            ]
+
+            val_data["dataset_name"] = "tpl100_val"
+
+            test_data = read_csv(
+                filepath_or_buffer=join(extracted_data_directory_path, "tpl100_test.tsv"),
+                delimiter="\t"
+            )
+
+            test_data.columns = [
+                "reaction_smiles",
+                "reaction_type",
+                "raw_id",
+                "original_reaction_type"
+            ]
+
+            test_data["dataset_name"] = "tpl100_test"
+
+            prepared_data = concat([
+                train_data,
+                val_data,
+                test_data
+            ])[[
+                "dataset_name",
+                "raw_id",
+                "reaction_type",
+                "original_reaction_type",
+                "reaction_smiles"
+            ]].dropna(
+                subset=[
+                    "reaction_smiles"
+                ]
+            ).sort_values(
+                by=[
+                    "raw_id"
+                ]
+            ).drop_duplicates().reset_index(
+                drop=True
+            ).astype(
+                dtype={
+                    "dataset_name": str,
+                    "raw_id": int,
+                    "reaction_type": int,
+                    "original_reaction_type": int,
+                    "reaction_smiles": str
+                }
+            )
+
+            if output_directory_path is None:
+                if enable_logger:
+                    getLogger(__name__).info(
+                        "Completed the preparation of the TPL100 dataset by (2022, Wen, M., et al.)."
+                    )
+
+                return prepared_data
+
+            else:
+                prepared_data.to_csv(
+                    path_or_buf=join(output_directory_path, "tpl100_2022_wen_et_al.csv"),
+                    index=False
+                )
+
+                if enable_logger:
+                    getLogger(__name__).info(
+                        "Completed the preparation of the TPL100 dataset by (2022, Wen, M., et al.). "
+                        "The prepared data is stored at: '{0}'.".format(
+                            abspath(join(output_directory_path, "tpl100_2022_wen_et_al.csv"))
+                        )
+                    )
+
+                return prepared_data
+
+        except Exception as exception_handle:
+            if enable_logger:
+                getLogger(
+                    "{0}.MiscellaneousDataPreparationUtilities.prepare_tpl100_2022_wen_et_al".format(__name__)
+                ).exception(exception_handle)
+
+            raise
