@@ -7,6 +7,13 @@ different formats, or published behind a paywall, which can be a significant bar
 Taking all of this into account, the goal of this project is to systematically curate, categorize and facilitate the
 access to existing open-source chemical reaction data in one place.
 
+**Author:** Haris Hasić, M.Eng.<br>
+**Affiliation:**
+Dr.Sci. Student @
+[Ishida Laboratory, Department of Computer Science, Tokyo Institute of Technology](http://www.cb.cs.titech.ac.jp) &&
+Research Engineer @ [Elix, Inc.](https://www.elix-inc.com)<br>
+**Current Version:** 2023.1.1
+
 
 ## Setup
 To use the ***chemical_reaction_data*** package, please ensure that the
@@ -38,7 +45,8 @@ Currently, the ***chemical_reaction_data*** package supports the following open-
 2. [The Open Reaction Database](#the-open-reaction-database)
 3. [The Rhea Database](#the-rhea-database)
 4. [The RetroRules Database](#the-retrorules-database)
-5. [Miscellaneous Data Sources](#miscellaneous-data-sources)
+5. [The Chemical Reaction Database](#the-chemical-reaction-database)
+6. [Miscellaneous Data Sources](#miscellaneous-data-sources)
 
 
 ### The United States Patent and Trademark Office Dataset
@@ -95,14 +103,26 @@ RetroRules database versions:
 | RetroRules (rr02.rp3.nohs) | [(2018, Duigou, T., et al.)](https://doi.org/10.5281/zenodo.5827969) | :green_circle: Implemented |
 
 
+### The Chemical Reaction Database
+The **Chemical Reaction Database** [[5]](#References) (CRD) is a collection of primarily organic chemical reactions
+drawn from the scientific literature and patent literature. Currently, the ***chemical_reaction_data*** package
+supports the following CRD versions:
+
+| Version | Reference                                                                     | Status                     |
+|---------|-------------------------------------------------------------------------------|----------------------------|
+| CRD     | [(2022, van der Lingen, R.)](https://doi.org/10.6084/m9.figshare.20279733.v1) | :green_circle: Implemented |
+
+
 ### Miscellaneous Data Sources
 Currently, the ***chemical_reaction_data*** package supports the following miscellaneous data sources:
 
 | Data Source                                                     | Reference                                                               | Status                     |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------|
-| Chemical Reaction Classification Dataset [[5]](#References)     | [(2013, Kraut, H., et al.)](https://doi.org/10.1021/ci400442f)          | :green_circle: Implemented |
-| Organic Chemistry Textbook Questions Dataset [[6]](#References) | [(2016, Wei, J.N., et al.)](https://doi.org/10.1021/acscentsci.6b00219) | :green_circle: Implemented |
-| RetroTransformDB Dataset [[7]](#References)                     | [(2018, Avramova, S., et al.)](https://doi.org/10.5281/zenodo.1209312)  | :green_circle: Implemented |
+| Chemical Reaction Classification Dataset [[6]](#References)     | [(2013, Kraut, H., et al.)](https://doi.org/10.1021/ci400442f)          | :green_circle: Implemented |
+| Organic Chemistry Textbook Questions Dataset [[7]](#References) | [(2016, Wei, J.N., et al.)](https://doi.org/10.1021/acscentsci.6b00219) | :green_circle: Implemented |
+| RetroTransformDB Dataset [[8]](#References)                     | [(2018, Avramova, S., et al.)](https://doi.org/10.5281/zenodo.1209312)  | :green_circle: Implemented |
+| Grambow Dataset [[9]](#References)                              | [(2022, Wen, M., et al.)](https://doi.org/10.1039/D1SC06515G)           | :green_circle: Implemented |
+| TPL100 Dataset [[9]](#References)                               | [(2022, Wen, M., et al.)](https://doi.org/10.1039/D1SC06515G)           | :green_circle: Implemented |
 
 
 ## License Information
@@ -113,24 +133,28 @@ data sources, please refer to the original publications.
 ## Contact
 If you are interested in contributing to this project by reporting bugs, submitting feedback or anything else that
 might be beneficial, please feel free to do so via GitHub issues or [e-mail](mailto:hasic@cb.cs.titech.ac.jp). Also,
-check out the latest [Elix, Inc.](https://www.elix-inc.com/) research. 
+check out the latest [Elix, Inc.](https://www.elix-inc.com/research) research.
 
 
 ## References
 1. Lowe, D.M. **Extraction of Chemical Structures and Reactions from the Literature**. *Ph.D. Thesis, University of
    Cambridge, Department of Chemistry, Pembroke College*, 2012. DOI: https://doi.org/10.17863/CAM.16293.
 2. Kearnes, S.M., Maser, M.R., Wleklinski, M., Kast, A., Doyle, A.G., Dreher, S.D., Hawkins, J.M., Jensen, K.F., and
-   Coley, C.W. **The Open Reaction Database**. *J. Am. Chem. Soc.*, 2021, 143, 45, 18820–18826.
-   DOI: https://doi.org/10.1021/jacs.1c09820.
+   Coley, C.W. **The Open Reaction Database**. *J. Am. Chem. Soc.*, 2021, 143, 45, 18820–18826. DOI:
+   https://doi.org/10.1021/jacs.1c09820.
 3. Bansal, P., Morgat, A., Axelsen, K.B., Muthukrishnan, V., Coudert, E., Aimo, L., Hyka-Nouspikel, N., Gasteiger, E.,
    Kerhornou, A., Neto, T.B., Pozzato, M., Blatter, M., Ignatchenko, A., Redaschi, N., and Bridge, A. **Rhea, the
-   Reaction Knowledgebase in 2022**, *Nucleic Acids Research*, 2022, 50, D1, D693–D700.
-   DOI: https://doi.org/10.1093/nar/gkab1016.
+   Reaction Knowledgebase in 2022**, *Nucleic Acids Research*, 2022, 50, D1, D693–D700. DOI:
+   https://doi.org/10.1093/nar/gkab1016.
 4. Duigou, T., du Lac, M., Carbonell, P., and Faulon, J. **RetroRules: A Database of Reaction Rules for Engineering
    Biology**, *Nucleic Acids Research*, 2018, 47, D1, D1229–D1235. DOI: https://doi.org/10.1093/nar/gky940.
-5. Kraut, H., Eiblmaier, J., Grethe, G., Löw, P., Matuszczyk, H., and Saller, H. **Algorithm for Reaction
+5. **The Chemical Reaction Database**: https://kmt.vander-lingen.nl. Accessed on: May 19th, 2023.
+6. Kraut, H., Eiblmaier, J., Grethe, G., Löw, P., Matuszczyk, H., and Saller, H. **Algorithm for Reaction
    Classification**, *J. Chem. Inf. Model.*, 2013, 53, 11, 2884–2895. DOI: https://doi.org/10.1021/ci400442f.
-6. Wei, J.N., Duvenaud, D., and Aspuru-Guzik, A. **Neural Networks for the Prediction of Organic Chemistry 
+7. Wei, J.N., Duvenaud, D., and Aspuru-Guzik, A. **Neural Networks for the Prediction of Organic Chemistry 
    Reactions**, *ACS Cent. Sci.*, 2016, 2, 10, 725–732. DOI: https://doi.org/10.1021/acscentsci.6b00219.
-7. Avramova, S., Kochev, N., and Angelov, P. **RetroTransformDB: A Dataset of Generic Transforms for Retrosynthetic 
+8. Avramova, S., Kochev, N., and Angelov, P. **RetroTransformDB: A Dataset of Generic Transforms for Retrosynthetic 
    Analysis**, *Data*, 2018, 3, 2. DOI: https://doi.org/10.3390/data3020014.
+9. Wen, M., Blau, S.M., Xie, X., Dwaraknathd, S., and Persson, K.A. **Improving Machine Learning Performance on Small
+   Chemical Reaction Data with Unsupervised Contrastive Pretraining**, *Chem. Sci.*, 2022, 13, 5, 1446-1458. DOI:
+   https://doi.org/10.1039/D1SC06515G.

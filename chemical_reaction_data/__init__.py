@@ -7,8 +7,8 @@ from rdkit.RDLogger import DisableLog
 
 __author__, __institution__, __version__ = (
     "Haris Hasic",
-    "Ishida Laboratory, Department of Computer Science, School of Computing, Tokyo Institute of Technology",
-    "2023.1"
+    "Ishida Laboratory, Department of Computer Science, Tokyo Institute of Technology && Elix, Inc.",
+    "2023.1.1"
 )
 
 
