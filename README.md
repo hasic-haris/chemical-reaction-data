@@ -1,4 +1,8 @@
-# Chemical Reaction Data
+# [DEPRECATED] Chemical Reaction Data
+
+**UPDATE**: This repository has been moved to https://github.com/neo-chem-synth-wave/ncsw-data, and will be removed
+shortly.
+
 The computer-assisted synthesis field grew to become one of the most active fields in chemoinformatics, with new and
 improved approaches centered around chemical reactions being published on a regular basis. Unfortunately, the chemical
 reaction data necessary to develop and test the practicality of such approaches is not easy to come by, given the
